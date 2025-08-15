@@ -18,21 +18,38 @@ dosthol consists of two main components:
 
 ## Installation
 
-### Prerequisites
+### Quick Install (One-Liner)
+
+For the fastest installation, use this one-liner in your Proxmox VE console:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash
+```
+
+This will automatically:
+- Install all dependencies
+- Download the latest version from GitHub
+- Install and configure the service
+- Set up firewall rules
+- Test the installation
+
+### Manual Installation
+
+#### Prerequisites
 
 - Proxmox VE 4.x or later
 - `socat` package installed
 - `gawk` (GNU awk) installed
 - `xxd` utility (usually part of vim-common)
 
-### Install Dependencies
+#### Install Dependencies
 
 ```bash
 apt update
 apt install socat gawk vim-common
 ```
 
-### Install dosthol
+#### Install dosthol
 
 1. Copy the scripts to the appropriate locations:
 ```bash
