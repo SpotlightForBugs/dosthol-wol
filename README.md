@@ -1,4 +1,4 @@
-# dosthol - Do Something on LAN
+# dosthol - Do Something on LAN -- by Oliver Jaksch proxmox-forum@com-in.de
 
 A Wake-on-LAN system for remote management of Proxmox VE virtual machines and containers.
 
