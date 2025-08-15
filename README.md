@@ -2,6 +2,18 @@
 
 A Wake-on-LAN system for remote management of Proxmox VE virtual machines and containers.
 
+## 🚀 Quick Start
+
+**Install with one command:**
+```bash
+curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash
+```
+
+**Uninstall with one command:**
+```bash
+curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
+```
+
 ## Overview
 
 dosthol consists of two main components:
@@ -32,6 +44,14 @@ This will automatically:
 - Install and configure the service
 - Set up firewall rules
 - Test the installation
+
+### Quick Uninstall (One-Liner)
+
+To completely remove dosthol from your system:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
+```
 
 ### Manual Installation
 
