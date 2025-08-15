@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # dosthol One-Line Uninstaller
-# Usage: curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
+# Usage: wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
 
 set -e
 
@@ -33,7 +33,7 @@ print_error() {
 check_root() {
     if [[ $EUID -ne 0 ]]; then
         print_error "This script must be run as root"
-        print_error "Please run: sudo curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash"
+        print_error "Please run: sudo wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash"
         exit 1
     fi
 }
@@ -134,7 +134,7 @@ show_uninstall_summary() {
     echo "  apt remove socat gawk vim-common"
     echo
     echo "To reinstall dosthol, run:"
-    echo "  curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash"
+    echo "  wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash"
 }
 
 # Main uninstall function

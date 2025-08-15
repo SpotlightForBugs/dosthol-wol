@@ -6,12 +6,12 @@ A Wake-on-LAN system for remote management of Proxmox VE virtual machines and co
 
 **Install with one command:**
 ```bash
-curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash
+wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash
 ```
 
 **Uninstall with one command:**
 ```bash
-curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
+wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
 ```
 
 ## Overview
@@ -35,7 +35,7 @@ dosthol consists of two main components:
 For the fastest installation, use this one-liner in your Proxmox VE console:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash
+wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/install-oneline.sh | bash
 ```
 
 This will automatically:
@@ -50,7 +50,7 @@ This will automatically:
 To completely remove dosthol from your system:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
+wget -qO- https://raw.githubusercontent.com/SpotlightForBugs/dosthol-wol/master/uninstall-oneline.sh | bash
 ```
 
 ### Manual Installation
